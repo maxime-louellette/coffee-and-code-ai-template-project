@@ -3,6 +3,8 @@ import { Hono } from "hono";
 import { cors } from "hono/cors";
 import { z } from "zod";
 
+import { pokemonRoutes } from "./pokemon-routes";
+
 const app = new Hono();
 app.use("/*", cors());
 
@@ -11,6 +13,7 @@ app.use("/*", cors());
  * @see https://hono.dev/docs/concepts/routers
  */
 const route = app
+  .route("/pokemon", pokemonRoutes)
   .post(
     "/posts",
     zValidator(

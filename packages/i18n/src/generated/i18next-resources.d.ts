@@ -34,6 +34,32 @@ export default interface Resources {
     AUTH_SUCCESS_SIGN_IN: "Signed in as {{email}}.";
     AUTH_SUCCESS_SIGN_UP: "Account ready for {{email}}.";
   };
+  pokedex: {
+    POKEDEX_ABILITIES_LABEL: "Abilities";
+    POKEDEX_BACK_HOME: "Back to home";
+    POKEDEX_DETAIL_EMPTY: "Select a Pokémon to see its details.";
+    POKEDEX_EMPTY_STATE: "No Pokémon found. Try a different name or number.";
+    POKEDEX_ERROR_STATE: "Something went wrong. Please try again.";
+    POKEDEX_HEIGHT_LABEL: "Height";
+    POKEDEX_HEIGHT_VALUE: "{{value}} m";
+    POKEDEX_ID_LABEL: "#{{id}}";
+    POKEDEX_LOADING: "Loading…";
+    POKEDEX_NOT_FOUND: 'No Pokémon found for "{{query}}".';
+    POKEDEX_SEARCH_BUTTON: "Search";
+    POKEDEX_SEARCH_LABEL: "Search";
+    POKEDEX_SEARCH_PLACEHOLDER: "Pokémon name or number…";
+    POKEDEX_STATS_LABEL: "Base Stats";
+    POKEDEX_STAT_ATTACK: "Attack";
+    POKEDEX_STAT_DEFENSE: "Defense";
+    POKEDEX_STAT_HP: "HP";
+    POKEDEX_STAT_SPECIAL_ATTACK: "Sp. Atk";
+    POKEDEX_STAT_SPECIAL_DEFENSE: "Sp. Def";
+    POKEDEX_STAT_SPEED: "Speed";
+    POKEDEX_SUBTITLE: "Search and discover Pokémon";
+    POKEDEX_TITLE: "Pokédex Explorer";
+    POKEDEX_WEIGHT_LABEL: "Weight";
+    POKEDEX_WEIGHT_VALUE: "{{value}} kg";
+  };
   web: {
     AUTH_DESCRIPTION_SIGN_IN: "Use the starter's auth package as a real entry point, not dead demo code.";
     AUTH_DESCRIPTION_SIGN_UP: "Create a working first-run experience that keeps the template repo clean and analyzable.";
@@ -52,5 +78,6 @@ export default interface Resources {
     LANGUAGE_ENGLISH: "English";
     LANGUAGE_FRENCH: "Francais";
     LANGUAGE_LABEL: "Language";
+    POKEDEX_EXPLORE_LINK: "POKEDEX_EXPLORE_LINK";
   };
 }

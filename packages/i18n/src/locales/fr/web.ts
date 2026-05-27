@@ -21,4 +21,5 @@ export default {
   LANGUAGE_ENGLISH: "Anglais",
   LANGUAGE_FRENCH: "Francais",
   LANGUAGE_LABEL: "Langue",
+  POKEDEX_EXPLORE_LINK: "Pokédex Explorer",
 } as const;

@@ -6,9 +6,9 @@
     {
       "files": ["packages/design-system/src/**/*.{ts,tsx}"],
       "rules": {
-        "unused-files": "off"
-      }
-    }
+        "unused-files": "off",
+      },
+    },
   ],
   "ignorePatterns": ["packages/shared/src/@types/poke-api.d.ts"],
   "ignoreDependencies": [
@@ -16,6 +16,6 @@
     "@storybook/addon-docs",
     "@storybook/addon-onboarding",
     "@total-typescript/tsconfig",
-    "storybook-addon-pseudo-states"
-  ]
+    "storybook-addon-pseudo-states",
+  ],
 }

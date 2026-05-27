@@ -1,6 +1,9 @@
 {
   "extends": "@total-typescript/tsconfig/bundler/no-dom/app",
   "compilerOptions": {
-    "types": ["bun"]
+    "types": ["bun"],
+    "paths": {
+      "@shared/*": ["../../packages/shared/src/*"]
+    }
   }
 }

@@ -20,4 +20,5 @@ export default {
   LANGUAGE_ENGLISH: "English",
   LANGUAGE_FRENCH: "Francais",
   LANGUAGE_LABEL: "Language",
+  POKEDEX_EXPLORE_LINK: "POKEDEX_EXPLORE_LINK",
 } as const;

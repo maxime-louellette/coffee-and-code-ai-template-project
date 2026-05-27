@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "better-auth": "^1.6.11",
-    "design-system": "workspace:*",
     "drizzle-orm": "^0.45.2"
   },
   "devDependencies": {

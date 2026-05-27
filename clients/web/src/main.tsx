@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import { App } from "./app";
 import "./i18n/config";
 import "@design-system/styles/global.css";
+import { PokedexPage } from "./pokedex-page";
 
 const rootElement = document.getElementById("root");
 assertIsDefined(rootElement);
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     children: [{ index: true, element: <App /> }],
+  },
+  {
+    path: "/pokedex",
+    element: <PokedexPage />,
   },
 ]);
 

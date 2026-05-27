@@ -11,6 +11,7 @@ import { AuthLayout, AuthProviderButton, SignInForm, SignUpForm } from "auth/com
 import { languageStorageKey, resolveLanguage, type SupportedLanguage, supportedLanguages } from "i18n";
 import { startTransition, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router";
 
 type AuthMode = "signin" | "signup";
 type Provider = "github" | "google";
@@ -156,6 +157,14 @@ export function App() {
             </div>
           </div>
 
+          <div className="flex justify-end">
+            <Link
+              to="/pokedex"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-black/70 transition-colors hover:text-black"
+            >
+              {t(($) => $.POKEDEX_EXPLORE_LINK)}
+            </Link>
+          </div>
           <Card className="overflow-hidden border-black/10 bg-[#171717] text-white shadow-[0_28px_90px_rgba(17,17,17,0.18)]">
             <CardHeader className="gap-3 border-b border-white/10 pb-5">
               <CardTitle className="text-3xl leading-none tracking-[-0.04em] text-white">
