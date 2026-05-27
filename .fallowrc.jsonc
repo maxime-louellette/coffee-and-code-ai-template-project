@@ -1,21 +1,38 @@
 {
   "$schema": "https://raw.githubusercontent.com/fallow-rs/fallow/main/schema.json",
-  "entry": ["servers/api/build.ts"],
-  "publicPackages": ["design-system"],
+  "entry": [
+    "servers/api/build.ts"
+  ],
+  "publicPackages": [
+    "design-system",
+    "shared"
+  ],
+  "workspaces": {
+    "patterns": [
+      "client/*",
+      "packages/*",
+      "server/*"
+    ]
+  },
   "overrides": [
     {
-      "files": ["packages/design-system/src/**/*.{ts,tsx}"],
+      "files": [
+        "packages/design-system/**"
+      ],
       "rules": {
-        "unused-files": "off",
-      },
-    },
+        "unused-exports": "off",
+        "unused-files": "off"
+      }
+    }
   ],
-  "ignorePatterns": ["packages/shared/src/@types/poke-api.d.ts"],
+  "ignorePatterns": [
+    "packages/shared/src/@types/poke-api.d.ts"
+  ],
   "ignoreDependencies": [
     "@chromatic-com/storybook",
     "@storybook/addon-docs",
     "@storybook/addon-onboarding",
     "@total-typescript/tsconfig",
-    "storybook-addon-pseudo-states",
-  ],
+    "storybook-addon-pseudo-states"
+  ]
 }
