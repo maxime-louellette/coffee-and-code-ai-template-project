@@ -1,0 +1,15 @@
+packages:
+  - clients/*
+  - packages/*
+  - servers/*
+
+catalog:
+  "@typescript/native-preview": 7.0.0-dev.20260514.1
+
+hoistPattern:
+  - "*"
+
+minimumReleaseAge: 10080
+
+nodeVersion: "24.16.0"
+engineStrict: true
